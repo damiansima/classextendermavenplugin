@@ -71,6 +71,21 @@
 
 	</dependencies>
 	
+	<repositories>
+      <repository>
+            <id>mule-ee-snapshot</id>
+            <name>EE Repository Snapshots</name>
+            <url>https://repository.mulesoft.org/nexus/content/repositories/snapshots</url>
+            <layout>default</layout>
+        </repository>
+        <repository>
+            <id>mule-ee</id>
+            <name>EE Repository Releases</name>
+            <url>https://repository.mulesoft.org/nexus/content/repositories/releases</url>
+            <layout>default</layout>
+        </repository>
+    </repositories>
+	
 	<scm>
         <connection>scm:git:git://github.com:damiansima/classextendermavenplugin.git
         </connection>
