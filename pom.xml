@@ -1,10 +1,11 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<parent>
-        <groupId>org.mule.tools.devkit</groupId>
-        <artifactId>mule-devkit-parent</artifactId>
-        <version>3.3.1</version>
-    </parent>
-    
+		<groupId>org.mule.tools.devkit</groupId>
+		<artifactId>mule-devkit-parent</artifactId>
+		<version>3.3.1</version>
+	</parent>
+
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.mule.tools</groupId>
 	<artifactId>class-extender-maven</artifactId>
@@ -70,29 +71,29 @@
 		</dependency>
 
 	</dependencies>
-	
+
 	<repositories>
-      <repository>
-            <id>mule-ee-snapshot</id>
-            <name>EE Repository Snapshots</name>
-            <url>https://repository.mulesoft.org/nexus/content/repositories/snapshots</url>
-            <layout>default</layout>
-        </repository>
-        <repository>
-            <id>mule-ee</id>
-            <name>EE Repository Releases</name>
-            <url>https://repository.mulesoft.org/nexus/content/repositories/releases</url>
-            <layout>default</layout>
-        </repository>
-    </repositories>
-	
+		<repository>
+			<id>mule-ee-snapshot</id>
+			<name>EE Repository Snapshots</name>
+			<url>https://repository.mulesoft.org/nexus/content/repositories/snapshots</url>
+			<layout>default</layout>
+		</repository>
+		<repository>
+			<id>mule-ee</id>
+			<name>EE Repository Releases</name>
+			<url>https://repository.mulesoft.org/nexus/content/repositories/releases</url>
+			<layout>default</layout>
+		</repository>
+	</repositories>
+
 	<scm>
-        <connection>scm:git:git://github.com:damiansima/classextendermavenplugin.git
+		<connection>scm:git:git://github.com:damiansima/classextendermavenplugin.git
         </connection>
-        <developerConnection>
+		<developerConnection>
             scm:git:git@github.com:damiansima/classextendermavenplugin.git
         </developerConnection>
-        <url>http://github.com/mulesoft/classextendermavenplugin.git</url>
-    </scm>
+		<url>http://github.com/mulesoft/classextendermavenplugin.git</url>
+	</scm>
 
 </project>

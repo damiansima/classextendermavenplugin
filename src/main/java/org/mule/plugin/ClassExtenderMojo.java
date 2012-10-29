@@ -1,5 +1,5 @@
 /**
- * Mule CMIS Connector
+ * Mule Class Extender Maven Plugin
  *
  * Copyright (c) MuleSoft, Inc.  All rights reserved.  http://www.mulesoft.com
  *
@@ -150,9 +150,12 @@ public class ClassExtenderMojo extends AbstractMojo {
 
                 Matcher matcher = pattern.matcher(line);
                 if (matcher.matches()) {
-                    // process the line
-                    String[] parts = line.split("\\{");
-                    line = parts[0] + " extends " + this.classToExtend + " {";
+                    // Avoid to extend a class that already extends something else
+                    if (!line.contains("extends")) {
+                        // process the line
+                        String[] parts = line.split("\\{");
+                        line = parts[0] + " extends " + this.classToExtend + " {";
+                    }
                 }
 
                 // save the line to a new file

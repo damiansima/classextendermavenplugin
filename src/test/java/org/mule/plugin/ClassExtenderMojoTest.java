@@ -1,5 +1,5 @@
 /**
- * Mule CMIS Connector
+ * Mule Class Extender Maven Plugin
  *
  * Copyright (c) MuleSoft, Inc.  All rights reserved.  http://www.mulesoft.com
  *
