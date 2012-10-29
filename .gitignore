@@ -6,4 +6,4 @@
 *.jar
 *.war
 *.ear
-
+release.properties
